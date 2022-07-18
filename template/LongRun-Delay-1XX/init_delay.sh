@@ -29,7 +29,7 @@ SetParams() {
 WaitUntilExpired() {
    SetParams $1 $2 
    sleep $WAIT_TIME 
-   echo Ready Set Go > $FILE
+   echo Done > $FILE
 }
 
 WaitUntilExpired $1 $2 

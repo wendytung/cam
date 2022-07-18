@@ -50,8 +50,8 @@ resource "null_resource" "init_delay" {
 #########################################################
 # Output
 #########################################################
-output "ready_set_go" {
-  value = "${fileexists("${local_file.delay_output.filename}") ? file("${local_file.delay_output.filename}") : ""}"
+output "done" {
+  value = "${fileexists("${local_file.delay_output.filename}") ? "Done" : ""}"
   depends_on = [
     null_resource.init_delay
   ] 

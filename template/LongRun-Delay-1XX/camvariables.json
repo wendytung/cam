@@ -1,0 +1,23 @@
+{
+	"terraform_version": ">= 1.0.0",
+	"template_input_params": [{
+		"name": "wait_time",
+		"label": "Wait Time (In Seconds)",
+		"description": "Wait time in seconds",
+		"hidden": false,
+		"immutable": false,
+		"required": true,
+		"secured": false,
+		"type": "string"
+	}],
+	"template_output_params": [{
+		"name": "done",
+		"label": "done",
+		"description": "Wait time has elapsed",
+		"group_name": "",
+		"secured": false,
+		"hidden": false,
+		"shortname": "",
+		"type": "string"
+	}]
+}
